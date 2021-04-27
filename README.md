@@ -19,16 +19,17 @@ Unnecessary columns were dropped from the data sets as in the example for the RE
 Similarly, “happiness_2019.ipynb” dropped “Overall Rank” from the columns using Pandas.
 
 
-![image]()
 
 
 Columns were also cleaned to remove spaces for easier coding in SQL.
 
-![image]()
+![image](https://github.com/moormeierz/ETL_Project_final/blob/main/Resources/images/columns_clean.PNG?raw=true)
 
 The same methodology was repeated for each data source.
 In the economic_freedom_index.ipynb, special characters were also removed as each data set was transformed to a csv and then loaded in Postgres.
  
+![image](https://github.com/moormeierz/ETL_Project_final/blob/main/Resources/images/get_rid_of_$.PNG?raw=true)
+
 -Load
 Using Quick Database Diagram tool, we created our Schema. We used Juptyer notebook to clean and organize our data. Finally, we imported our cleaned data in to Postgress tables; Hapiness_csv, country_info_API and economic_csv. Assigning Primary and Foreign keys to  country name to connect the tables. 
 
