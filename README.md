@@ -12,28 +12,35 @@ Unnecessary columns were dropped from the data sets as in the example for the RE
 
 
 
-
+![image]()
 
 
 
 Similarly, “happiness_2019.ipynb” dropped “Overall Rank” from the columns using Pandas.
 
 
-
+![image]()
 
 
 Columns were also cleaned to remove spaces for easier coding in SQL.
- 
+
+![image]()
+
 The same methodology was repeated for each data source.
 In the economic_freedom_index.ipynb, special characters were also removed as each data set was transformed to a csv and then loaded in Postgres.
  
 Load
 Using Quick Database Diagram tool, we created our Schema. We used Juptyer notebook to clean and organize our data. Finally, we imported our cleaned data in to Postgress tables; Hapiness_csv, country_info_API and economic_csv. Assigning Primary and Foreign keys to  country name to connect the tables. 
-  
+
+![image]()
+
+
 Challenges
 1. Our original idea was to compare a country’s happiness to its weather.  First, we tried to use the openweather API. However, openweather only allows to query 5 days of current temperature.
 2. Then, we selected a different weather source, Meteostat, with the goal to use the capital city json file as a list to run a loop.  However, the API does not allow for fetching lists effectively.  Also, it would have been difficult to compare weather on the country level.  Therefore, we decided to compare country’s happiness with certain economic factors.
 3.	Normalizing the data on country.  One dataset contained 186 countries, one contained 156 countries, and another contained 250 entries.  We used list comprehension to match country_name across the three datasets.  We came up with a list of 140 countries.  Then, we exported the data using the loc method.  This is the final data that was put into our postgres server.
+
+![image]()
 
 Conclusion
 By merging these datasets, we could study:
