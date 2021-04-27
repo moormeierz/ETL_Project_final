@@ -31,9 +31,9 @@ Load
 Using Quick Database Diagram tool, we created our Schema. We used Juptyer notebook to clean and organize our data. Finally, we imported our cleaned data in to Postgress tables; Hapiness_csv, country_info_API and economic_csv. Assigning Primary and Foreign keys to  country name to connect the tables. 
   
 Challenges
-1.	The original data source was on weather, however the weather API only allows to query 5 days of current temperature
-2.	Selected a different weather source, Meteostat, with the goal to use the capital city json file as a list to run a loop.  However, the API does not allow for fetching lists effectively
-3.	Normalizing the data on country.  We had created a 3rd table to normalize across happiness and population, as some key countries were being dropped (eg. Russia) due to naming differences.  With the addition of a 3rd data source, this was more challenging.  We chose to leverage list comprehension in Jupyter Notebook and drop the number of entries from 250 to 140 where all names were harmonized.
+1. Our original idea was to compare a country’s happiness to its weather.  First, we tried to use the openweather API. However, openweather only allows to query 5 days of current temperature.
+2. Then, we selected a different weather source, Meteostat, with the goal to use the capital city json file as a list to run a loop.  However, the API does not allow for fetching lists effectively.  Also, it would have been difficult to compare weather on the country level.  Therefore, we decided to compare country’s happiness with certain economic factors.
+3.	Normalizing the data on country.  One dataset contained 186 countries, one contained 156 countries, and another contained 250 entries.  We used list comprehension to match country_name across the three datasets.  We came up with a list of 140 countries.  Then, we exported the data using the loc method.  This is the final data that was put into our postgres server.
 
 Conclusion
 By merging these datasets, we could study:
