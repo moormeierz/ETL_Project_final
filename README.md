@@ -45,6 +45,6 @@ By merging these datasets, we could study:
 -	Does the economic freedom ranking have any correlation with happiness score?
 
 Here’s an example of a query using Postgres SQL to run the operation:
-1.	Pull happy score, unemployment by country.  This example pulls Albania.
+- Pull happy score, unemployment by country.  This example pulls Albania.
  
 ![image](https://github.com/moormeierz/ETL_Project_final/blob/main/Resources/images/query.PNG?raw=true)
