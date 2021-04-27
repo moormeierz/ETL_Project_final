@@ -8,14 +8,9 @@ The data used includes 3 data sets, each with their own Jupyter notebook:
 
 The two csv files from Kaggle contain data that was collected in 2019.  The data that was pulled from the API is current data.  However, we only selected columns that wouldn’t vary by year such as: region, subregion, area, and currency.
 ## Transformation
-Unnecessary columns were dropped from the data sets as in the example for the REST countries API found in “country_info.ipynb”
+The API returned data in the JSON format.  Therefore, we converted the JSON data into a pandas dataframe.  Then, we dropped unnecessary  columns.  Unnecessary columns were dropped for the other two data sets as well.
 
-
-
-Similarly, “happiness_2019.ipynb” dropped “Overall Rank” from the columns using Pandas.
-
-
-
+![image](https://github.com/moormeierz/ETL_Project_final/blob/main/Resources/images/transformation.PNG?raw=true)
 
 Columns were also cleaned to remove spaces for easier coding in SQL.
 
