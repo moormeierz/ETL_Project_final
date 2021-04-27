@@ -26,6 +26,10 @@ Using Quick Database Diagram tool, we created our Schema. We used Juptyer notebo
 
 ![image](https://github.com/moormeierz/ETL_Project_final/blob/main/ERD.png?raw=true)
 
+This is the table schema that was used to import the 3 csv files into postgres.
+
+![image](https://github.com/moormeierz/ETL_Project_final/blob/main/Resources/images/table_schema_postgres.PNG?raw=true)
+
 
 ## Challenges
 1. Our original idea was to compare a country’s happiness to its weather.  First, we tried to use the openweather API. However, openweather only allows to query 5 days of current temperature.
@@ -36,9 +40,9 @@ Using Quick Database Diagram tool, we created our Schema. We used Juptyer notebo
 
 ## Conclusion
 By merging these datasets, we could study:
-•	How unemployment affects happiness score
-•	How social support and access to healthcare affects life expectancy
-•	Does the economic freedom ranking have any correlation with happiness score?
+- How unemployment affects happiness score
+-	How social support and access to healthcare affects life expectancy
+-	Does the economic freedom ranking have any correlation with happiness score?
 
 Here’s an example of a query using Postgres SQL to run the operation:
 1.	Pull happy score, unemployment by country.  This example pulls Albania.
