@@ -51,4 +51,4 @@ By merging these datasets, we could study:
 Here’s an example of a query using Postgres SQL to run the operation:
 1.	Pull happy score, unemployment by country.  This example pulls Albania.
  
-![image](https://user-images.githubusercontent.com/10951300/116165699-6b602600-a6ca-11eb-8b8a-c06015fb679b.png)
+![image](https://github.com/moormeierz/ETL_Project_final/blob/main/Resources/images/query.PNG?raw=true)
