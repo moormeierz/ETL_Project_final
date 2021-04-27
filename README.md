@@ -22,7 +22,7 @@ In the economic_freedom_index.ipynb, special characters were also removed as eac
 ![image](https://github.com/moormeierz/ETL_Project_final/blob/main/Resources/images/get_rid_of_$.PNG?raw=true)
 
 ## Load
-Using Quick Database Diagram tool, we created our Schema. We used Juptyer notebook to clean and organize our data. Finally, we imported our cleaned data in to Postgress tables; Hapiness_csv, country_info_API and economic_csv. Assigning Primary and Foreign keys to  country name to connect the tables. 
+Using Quick Database Diagram tool, we created our Schema. We used Juptyer notebook to clean and organize our data. Finally, we imported our cleaned data in to Postgress tables; happiness_csv, country_info_API and economic_csv. Assigning Primary and Foreign keys to  country name to connect the tables. 
 
 ![image](https://github.com/moormeierz/ETL_Project_final/blob/main/ERD.png?raw=true)
 
