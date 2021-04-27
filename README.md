@@ -40,7 +40,7 @@ Challenges
 2. Then, we selected a different weather source, Meteostat, with the goal to use the capital city json file as a list to run a loop.  However, the API does not allow for fetching lists effectively.  Also, it would have been difficult to compare weather on the country level.  Therefore, we decided to compare country’s happiness with certain economic factors.
 3.	Normalizing the data on country.  One dataset contained 186 countries, one contained 156 countries, and another contained 250 entries.  We used list comprehension to match country_name across the three datasets.  We came up with a list of 140 countries.  Then, we exported the data using the loc method.  This is the final data that was put into our postgres server.
 
-![image]()
+![image](https://github.com/moormeierz/ETL_Project_final/blob/main/Resources/images/list_comp.PNG?raw=true)
 
 Conclusion
 By merging these datasets, we could study:
