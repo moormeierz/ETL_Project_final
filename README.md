@@ -2,9 +2,9 @@
 Group members:  Zach, Shanna, Stephanie, Lucas
 ## Extraction
 The data used includes 3 data sets, each with their own Jupyter notebook:
-•	The Economic Freedom Index  (Kaggle) – economic_freedom_index.ipynb
-•	World Happiness Report  (Kaggle) - happiness_2019. ipynb
-•	REST Countries  (API) – coutry_info. ipynb
+- The Economic Freedom Index  (Kaggle) – economic_freedom_index.ipynb
+- World Happiness Report  (Kaggle) - happiness_2019. ipynb
+- REST Countries  (API) – coutry_info. ipynb
 
 The two csv files from Kaggle contain data that was collected in 2019.  The data that was pulled from the API is current data.  However, we only selected columns that wouldn’t vary by year such as: region, subregion, area, and currency.
 ## Transformation
